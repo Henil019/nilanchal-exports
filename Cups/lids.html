@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disposable Cups - Nilanchal Exports</title>
+    <link rel="stylesheet" href="/Takeaway-packaging/common.css">
+    <link rel="icon" href="/Nilanchal/Images/NILANCHAL  LOGO (4).svg" type="image/svg+xml" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/Nilanchal/otherproduct.css" /> -->
+    
+</head>
+<body>
+  <script>
+    function toggleArrow(element) {
+      let arrow = element.querySelector(".arrow");
+      let expanded = element.getAttribute("aria-expanded") === "true";
+      arrow.innerHTML = expanded ? "▲" : "▼";
+    }
+  </script>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+    <!-- Left Section: Logo + Toggler Together -->
+    <div class="d-flex align-items-center">
+      <!-- Offcanvas Toggler (Opens Sidebar Menu) -->
+      <button class="navbar-toggler me-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+        aria-controls="mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Logo and Brand Name -->
+      <a class="navbar-brand d-flex align-items-center" href="/index.html" style="font-size: 1.5rem; font-weight: bold; color: #004d66;">
+        <img src="/Nilanchal/Images/NILANCHAL  LOGO (4).svg" alt="Logo" class="me-2" style="width: 90px; height: auto;">
+        <span style="color: #004d66;">Nilanchal Exports</span>
+      </a>
+      
+    </div>
+    
+
+    <!-- Desktop Navbar Links (Hidden in Mobile) -->
+    <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+      <ul class="navbar-nav" style="font-family: 'Poppins', sans-serif;">
+        <li class="nav-item"><a class="nav-link" href="/index.html" style="color: #004d66;">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Nilanchal/About.html" style="color: #004d66;">About Us</a></li>
+    
+        <!-- Dropdown with Hover -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/Nilanchal/Products.html" id="navbarDropdown"
+             role="button" data-bs-toggle="dropdown" style="color: #004d66;">
+            Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/Nilanchal/tableware.html" >Tableware</a></li>
+            <li><a class="dropdown-item" href="/Nilanchal/takeaway-packaging.html" >Takeaway Packaging</a></li>
+            <li><a class="dropdown-item" href="/Nilanchal/cups.html" >Coffee Cups & Lids</a></li>
+            <li><a class="dropdown-item" href="/Nilanchal/paper-bags.html" >Paper Bags</a></li>
+            <!--<li><a class="dropdown-item" href="/Nilanchal/otherproduct.html" >Other Products</a></li>-->
+          </ul>
+        </li>
+    
+        <li class="nav-item"><a class="nav-link" href="/Nilanchal/certificate.html" style="color: #004d66;">Certificate</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Nilanchal/Contact.html" style="color: #004d66;">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Nilanchal/catalog.html" style="color: #004d66;">E-Catalog</a></li>
+
+      </ul>
+    </div>
+    
+    
+    <!-- JavaScript for Hover Effect -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var dropdown = document.querySelector(".dropdown");
+      var dropdownMenu = dropdown.querySelector(".dropdown-menu");
+      var dropdownLink = dropdown.querySelector(".nav-link");
+    
+      // Show dropdown on hover
+      dropdown.addEventListener("mouseenter", function() {
+        dropdown.classList.add("show");
+        dropdownMenu.classList.add("show");
+      });
+    
+      // Hide dropdown when mouse leaves
+      dropdown.addEventListener("mouseleave", function() {
+        dropdown.classList.remove("show");
+        dropdownMenu.classList.remove("show");
+      });
+    
+      // Navigate to the Products page on click
+      dropdownLink.addEventListener("click", function(event) {
+        window.location.href = this.href;
+      });
+    });
+    </script>
+    
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="mobileMenuLabel" style="color: #004d66;">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="/index.html" style="color: #004d66;">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="/Nilanchal/About.html" style="color: #004d66;">About Us</a></li>
+      <li class="nav-item">
+        <!-- Products Link (With Professional Arrow & Collapse Toggle) -->
+        <a class="nav-link d-flex justify-content-between align-items-center" href="/Nilanchal/products.html" 
+           data-bs-toggle="collapse" data-bs-target="#mobileProductsMenu" aria-expanded="false" 
+           aria-controls="mobileProductsMenu" onclick="toggleArrow(this)" style="color: #004d66;">
+          Products
+          <span class="arrow" style="transition: transform 0.3s; color: #004d66;">▼</span>
+        </a>
+        
+        <!-- Collapsible Product Menu -->
+        <div class="collapse" id="mobileProductsMenu">
+          <ul class="list-unstyled ps-3">
+            <li><a class="nav-link" href="/Nilanchal/tableware.html" style="color: #004d66;">Tableware</a></li>
+            <li><a class="nav-link" href="/Nilanchal/takeaway-packaging.html" style="color: #004d66;">Takeaway Packaging</a></li>
+            <li><a class="nav-link" href="/Nilanchal/cups.html" style="color: #004d66;">Coffee Cups & Lids</a></li>
+            <li><a class="nav-link" href="/Nilanchal/paper-bags.html" style="color: #004d66;">Paper Bags</a></li>
+            <!--<li><a class="nav-link" href="/Nilanchal/otherproduct.html" style="color: #004d66;">Other Products</a></li>-->
+            <li><a class="nav-link" href="/Nilanchal/products.html" style="color: #004d66;">All Products</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="/Nilanchal/certificate.html" style="color: #004d66;">Certificate</a></li>
+      <li class="nav-item"><a class="nav-link" href="/Nilanchal/Contact.html" style="color: #004d66;">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="/Nilanchal/catalog.html" style="color: #004d66;">E-Catalog</a></li>
+
+    </ul>
+  </div>
+</div>
+
+     <br>
+     <section class="cups-container">
+        <h2 data-aos="fade-down">Paper Lids</h2>
+        
+        <div class="cup-grid">
+            <div class="cup-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="cup-image">
+                    <img src="cup-image/sipperlid.jpg" alt="80mm Sipper Lid">
+                </div>
+                            <!-- 80mm Sipper Lid -->
+
+                <div class="cup-info">
+                    <h3>80mm Sipper Lid</h3>
+                    <p><strong>Dimensions:</strong> Ø80mm × 25mm (Height)</p>
+                    <p><strong>Capacity:</strong> For 250ml/80mm diameter cups</p>
+                    <p><strong>Material:</strong> White paper</p>
+                    <a href="/Nilanchal/Contact.html" class="enquire-btn">Enquire Now</a>
+                  </div>
+            </div>
+    
+            <!-- 90mm Sipper Lid -->
+            <div class="cup-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="cup-image">
+                    <img src="cup-image/sipperlid.jpg" alt="90mm Sipper Lid">
+                </div>
+                <div class="cup-info">
+                    <h3>90mm Sipper Lid</h3>
+                    <p><strong>Dimensions:</strong> Ø90mm × 25mm (Height)</p>
+                    <p><strong>Capacity:</strong> For 350ml/90mm diameter cups</p>
+                    <p><strong>Material:</strong> White paper</p>
+                    <a href="/Nilanchal/Contact.html" class="enquire-btn">Enquire Now</a>
+                  </div>
+            </div>
+    <!-- 80mm Flat Lid -->
+    <div class="cup-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="cup-image">
+            <img src="cup-image/FLAT LID.png" alt="80mm Flat Lid">
+        </div>
+        <div class="cup-info">
+            <h3>80mm Flat Lid</h3>
+            <p><strong>Dimensions:</strong> Ø80mm × 5mm (Height)</p>
+            <p><strong>Capacity:</strong> For 250ml/80mm diameter cups</p>
+            <p><strong>Material:</strong> White paper</p>
+            <a href="/Nilanchal/Contact.html" class="enquire-btn">Enquire Now</a>
+          </div>
+    </div>
+           
+            <!-- 90mm Flat Lid -->
+            <div class="cup-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="cup-image">
+                    <img src="cup-image/FLAT LID.png" alt="90mm Flat Lid">
+                </div>
+                <div class="cup-info">
+                    <h3>90mm Flat Lid</h3>
+                    <p><strong>Dimensions:</strong> Ø90mm × 5mm (Height)</p>
+                    <p><strong>Capacity:</strong> For 350ml/90mm diameter cups</p>
+                    <p><strong>Material:</strong> White paper</p>
+                    <a href="/Nilanchal/Contact.html" class="enquire-btn">Enquire Now</a>
+                  </div>
+            </div>
+    
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color:#004d66;color:white;padding:40px 20px 20px;text-align:center;position:relative;overflow:visible;z-index:1;font-family:'Poppins',sans-serif;">
+      <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;padding-bottom:30px;">
+        <div style="flex:1 1 300px;text-align:left;">
+          <h3 style="color:#ffa726;font-size:1.5rem;margin-bottom:20px;">Nilanchal Exports</h3>
+          <p style="font-size:0.95rem;line-height:1.6;color:#c0d9e6;margin-bottom:15px;">We are a globally recognized leader in delivering premium eco-friendly products.</p>
+          <p style="font-size:0.9rem;color:#c0d9e6;font-weight:500;margin-bottom:10px;">Contact us at:</p>
+          <p style="font-size:0.9rem;color:#ffa726;margin:8px 0;">Email: info@nilanchalexports.com</p>
+          <p style="font-size:0.9rem;color:#ffa726;margin:8px 0;">Phone: +91 8320109838</p>
+          <p style="font-size:0.9rem;color:#ffa726;margin:8px 0;">Address: 5 - maitri bungalows , B\S Samarthya bungalows DR park road,
+jahangirpura , SURAT, GUJARAT, 395005</p>
+        </div>
+        <div style="flex:1 1 150px;text-align:left;">
+          <h4 style="color:#ffa726;font-size:1.2rem;margin-bottom:15px;">Quick Links</h4>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="margin-bottom:10px;"><a href="/index.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Home</a></li>
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/About.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">About Us</a></li>
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/Products.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Products</a></li>
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/certificate.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Certificate</a></li>
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/Contact.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Contact US</a></li>
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/catalog.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">E-Catalog</a></li>
+          </ul>
+        </div>
+        <div style="flex:1 1 150px;text-align:left;">
+          <h4 style="color:#ffa726;font-size:1.2rem;margin-bottom:15px;">Our Products</h4>
+          <ul style="list-style:none;padding:0;margin:0;">
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/tableware.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Tableware</a></li>
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/takeaway-packaging.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Takeaway Packaging</a></li>
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/cups.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Coffee Cups & Lids</a></li>
+            <li style="margin-bottom:10px;"><a href="/Nilanchal/paper-bags.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Paper Bags</a></li>
+            <!--<li style="margin-bottom:10px;"><a href="/Nilanchal/otherproduct.html" style="color:white;text-decoration:none;font-size:16px;transition:color 0.3s ease;display:block;text-align:left;">Other Products</a></li>-->
+          </ul>
+        </div>
+        <div style="max-width:400px;width:100%;box-sizing:border-box;padding:20px;background:rgba(255,255,255,0.1);border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+          <h4 style="color:#ffa726;font-size:1.4rem;margin-bottom:15px;text-align:center;font-weight:bold;">✨ Enquiry Form ✨</h4>
+          <form id="enquiryForm" style="display:grid;gap:15px;">
+            <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:14px;border:2px solid transparent;border-radius:8px;background-color:rgba(0,0,0,0.2);color:white;font-size:1rem;box-sizing:border-box;transition:0.3s ease;outline:none;" onfocus="this.style.borderColor='#ffa726'; this.style.boxShadow='0 0 8px #ffa726';" onblur="this.style.borderColor='transparent'; this.style.boxShadow='none';" />
+            <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:14px;border:2px solid transparent;border-radius:8px;background-color:rgba(0,0,0,0.2);color:white;font-size:1rem;box-sizing:border-box;transition:0.3s ease;outline:none;" onfocus="this.style.borderColor='#ffa726'; this.style.boxShadow='0 0 8px #ffa726';" onblur="this.style.borderColor='transparent'; this.style.boxShadow='none';" />
+            <input type="tel"  name="contact" placeholder="Contact Number" required style="width:100%;padding:14px;border:2px solid transparent;border-radius:8px;background-color:rgba(0,0,0,0.2);color:white;font-size:1rem;box-sizing:border-box;transition:0.3s ease;outline:none;" onfocus="this.style.borderColor='#ffa726'; this.style.boxShadow='0 0 8px #ffa726';" onblur="this.style.borderColor='transparent'; this.style.boxShadow='none';" />
+            <textarea placeholder="Your Message" name="message" rows="3" required style="width:100%;padding:14px;border:2px solid transparent;border-radius:8px;background-color:rgba(0,0,0,0.2);color:white;font-size:1rem;box-sizing:border-box;transition:0.3s ease;outline:none;resize:none;" onfocus="this.style.borderColor='#ffa726'; this.style.boxShadow='0 0 8px #ffa726';" onblur="this.style.borderColor='transparent'; this.style.boxShadow='none';"></textarea>
+            <button type="submit" style="width:100%;padding:14px;background:#004d66;color:#ffffff;border:2px solid #0088a9;font-weight:bold;border-radius:8px;cursor:pointer;transition:all 0.3s ease;font-size:1rem;box-shadow:0 4px 8px rgba(0,77,102,0.3);letter-spacing:1px;text-transform:uppercase;" onmouseover="this.style.background='#0088a9'; this.style.color='#ffffff'; this.style.boxShadow='0 6px 12px rgba(0,136,169,0.5)';" onmouseout="this.style.background='#004d66'; this.style.boxShadow='0 4px 8px rgba(0,77,102,0.3)';">Submit Enquiry</button>
+          </form>
+        </div>
+      </div>
+      <div style="text-align:center;margin:25px 0;">
+        <a href="https://www.instagram.com/nilanchalexports/" target="_blank" style="color:#ffa726;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:color 0.3s ease;">
+          <img src="/Nilanchal/Images/Instagram.png" alt="Instagram" style="height:30px;width:30px;transition:transform 0.3s ease;" />
+          Follow us on Instagram
+        </a>
+        &nbsp;  &nbsp;
+        <a href="https://wa.me/918320109838?text=Hello%20Nilanchal%20Exports,%20I%20am%20interested%20in%20your%20products." target="_blank" style="color: #25D366; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: color 0.3s ease;">
+          <img src="/Nilanchal/Images/whatsapp.png" alt="WhatsApp" style="height: 30px; width: 30px; transition: transform 0.3s ease;" />
+          Chat with us on WhatsApp
+        </a>
+         &nbsp;  &nbsp;
+       <a href="https://www.linkedin.com/in/nupen-patel-808b88325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+        <img src="/Nilanchal/Images/linkedin (1).png" alt="LinkedIn" style="height:30px; width:30px;" />
+        Connect on LinkedIn
+      </a>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,0.2);margin:0 auto;max-width:1200px;"></div>
+      <div style="text-align:center;font-size:14px;color:white;padding:20px 0;margin-top:20px;border-radius:0 0 8px 8px;">&copy; 2025 Nilanchal Exports. All Rights Reserved.</div>
+    </footer>
+    
+    <script src="/JS/submit-form.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 120,
+                delay: 100
+            });
+        });
+    </script>
+</body>
+</html>
