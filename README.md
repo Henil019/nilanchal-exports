@@ -5,7 +5,7 @@
 **Project Type:** Business / Corporate Website  
 
 ## 🌍 Live Website
-👉 https://henil019.github.io/nilanchal-exports/
+👉 https://henil019.github.io/nilanchal-exports/nilanchalexports.com
 
 ## 🎯 Project Overview
 Designed and developed a responsive business website for Nilanchal Exports, an eco-friendly paper products company. The goal was to create a clean, professional, and sustainable brand presence.
