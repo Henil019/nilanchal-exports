@@ -2,7 +2,7 @@
 
 **Client:** Nilanchal Exports  
 **Role:** Web Designer & Frontend Developer  
-**Project Type:** Business / Corporate Website  
+**Project Type:** Business Website  
 
 ## 🌍 Live Website
 👉 https://www.nilanchalexports.com
